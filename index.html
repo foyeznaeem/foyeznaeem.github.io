@@ -1,569 +1,272 @@
 <!DOCTYPE html>
-<html lang="zxx">
+<html lang="en">
+  <head>
+    <meta charSet="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5" />
+    <title>Foyez's Blog</title>
+    
+    <meta name="author" content="Foyez Ahammed Naeem" />
+    <meta name="description" content="Personal portfolio of Foyez Ahammed Naeem - Showcasing AI, ML, and Autonomous Systems projects" />
+    <meta property="og:title" content="Foyez Ahammed Naeem - AI & Autonomous Systems Enthusiast" />
+    <meta property="og:description" content="Explore my projects on AI, Machine Learning, and Autonomous Systems. Passionate about innovation and research." />
+    <meta property="og:image" content="./images/ficon.png" />
+    <meta property="og:image:width" content="512" />
+    <meta property="og:image:height" content="512" />
+    
 
-<head>
+    <meta name="twitter:title" content="Foyez Ahammed Naeem - AI & Autonomous Systems Enthusiast" />
+    <meta name="twitter:image" content="./images/ogimage.jpg" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:description" content="Showcasing projects in AI, Machine Learning, and Autonomous Systems. Passionate about innovation and research." />
+    
+    <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon" />
+    
+    <link rel="stylesheet" href="./plugins/aos/aos.css">
+    <link rel="stylesheet" href="./styles/output.css">
+  </head>
 
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <body>
+    <!-- start of header -->
+    <header class="fixed top-0 z-[9000] w-full header [&.invisible]:-translate-y-full">
+      <div class="container">
+        <div class="flex justify-between py-6 items-center relative">
+          <!-- logo -->
+          <div class="hideOnScroll lg:[&.scrolled]:opacity-0 lg:[&.scrolled]:-translate-x-8 w-1/4 transition-all duration-300">
 
-    <!-- grid css -->
-    <link rel="stylesheet" href="css/plugins/bootstrap-grid.css">
-    <!-- font awesome css -->
-    <link rel="stylesheet" href="css/plugins/fontawesome.min.css">
-    <!-- swiper css -->
-    <link rel="stylesheet" href="css/plugins/swiper.min.css">
-    <!-- okai css -->
-    <link rel="stylesheet" href="css/style-stylish.css">
-    <!-- page title -->
-    <title>Foyez: A Philomath & Research Enthusiast</title>
+          </div>
 
-</head>
+          <!-- navbar -->
+          <nav class="navbar">
+            <span class="indicator"></span>
+            <a class="active" href="./index.html">Home</a>
+            <a href="./about.html">About</a>
+            <a href="./project.html">Project</a>
+            <a href="./blog.html">Blog</a>
+            <a href="./contact.html">Contact</a>
+          </nav>
+          <div class="navOverlay"></div>
 
-<body>
+          <!-- toggle mobile-nav -->
+          <button type="button" aria-label="Toggle Mobile Navigation" class="navToggler">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+              <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+              <path d="M4 8l16 0"></path>
+              <path d="M4 16l16 0"></path>
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+              <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+              <path d="M18 6l-12 12"></path>
+              <path d="M6 6l12 12"></path>
+            </svg>
+          </button>
 
-    <!-- wrapper -->
-    <div id="smooth-wrapper" class="mil-page-wrapper">
+          <!-- social links -->
+          <div class="hideOnScroll lg:[&.scrolled]:opacity-0 lg:[&.scrolled]:translate-x-8 w-1/4 transition-all duration-300 text-right text-sm hidden lg:block">
 
-        <!-- cursor -->
-        <div class="mil-cursor-follower"></div>
-        <!-- cursor end -->
-
-        <!-- preloader -->
-        <div class="mil-preloader">
-            <div class="mil-preloader-animation">
-                <div class="mil-pos-abs mil-animation-1">
-                    <p class="mil-head1 mil-m1">Research Enthusiast</p>
-                    <p class="mil-head1 mil-a2">&</p>
-                    <p class="mil-head1 mil-m1">A Philomath</p>
-                </div>
-                <div class="mil-pos-abs mil-animation-2">
-                    <div class="mil-reveal-frame">
-                        <p class="mil-reveal-box"></p>
-                        <p class="mil-head1 mil-m1">foyez.me</p>
-                    </div>
-                </div>
-            </div>
+          </div>
         </div>
-        <!-- preloader end -->
+      </div>
+    </header>
+    <!-- end of header -->
 
-        <!-- scroll progress -->
-        <div class="mil-progress-track">
-            <div class="mil-progress"></div>
-        </div>
-        <!-- scroll progress end -->
+    <!-- start of main -->
+    <main class="bg-dark relative z-10 pt-[92px] lg:pt-[106px] min-h-[82vh] overflow-hidden">
+      
+      <!-- ================= start of banner ================= -->
+      <section class="banner homepage-banner">
+        <div class="container h-full">
+          <div class="row h-full items-center">
+            <div class="col-12 text-center">
 
-        <!-- fixed elements -->
-        <div class="mil-fixed">
-            <div class="mil-top-panel-2">
-                <div class="container">
-                    <div class="mil-left-side mil-tp-transition" id="swupTpLeft">
-                        <a href="#top" class="mil-logo mil-scroll-to" data-no-swup>
-                            <!-- <i class="far fa-cube"></i> -->
-                            <span>Foyez</span>
-                        </a>
-                    </div>
-
-                    <!-- <div class="mil-onepage-nav" id="swup-opm">
-                        <ul>
-                            <li><a href="#about" class="mil-scroll-to" data-no-swup>About</a></li>
-                            <li><a href="#portfolio" class="mil-scroll-to" data-no-swup>Portfolio</a></li>
-                            <li><a href="#reviews" class="mil-scroll-to" data-no-swup>Reviews</a></li>
-                            <li><a href="#contact" class="mil-scroll-to" data-no-swup>Contact</a></li>
-                        </ul>
-                    </div> -->
-
-                    <div class="mil-buttons-tp-frame mil-c-gone">
-                        <div class="mil-buttons">
-                            <div class="mil-tp-btn">
-                                <a href="contact.html"><span><i class="fal fa-envelope"></i></span></a>
-                            </div>
-                            
-                            <!-- <div class="mil-tp-btn">
-                                <div class="mil-menu-btn"><span></span></div>
-                            </div> -->
-                        </div>
-                    </div>
+              <!-- image/mobile -->
+              <div class="relative mb-6 mx-auto inline-block md:hidden">
+                <div class="bg-[#E3DFDC] mx-5 rounded-full overflow-hidden">
+                  <img 
+                    data-aos="slide-up" 
+                    data-aos-duration="500" 
+                    data-aos-delay="150" 
+                    loading="lazy" 
+                    width="150" 
+                    height="150"
+                    class="mx-auto"
+                    alt="CharlieEdward" 
+                    src="./images/author.jpg" />
                 </div>
+                <svg data-aos class="absolute top-[-0px] right-[10px] transition duration-1000 delay-300 scale-0 rotate-[360deg] [&.aos-animate]:scale-100 [&.aos-animate]:rotate-0" width="51" height="52" viewBox="0 0 51 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M21.7856 25.3396C21.8855 25.0011 21.9855 24.6907 22.0712 24.3804C22.4853 22.7864 22.8852 21.1925 23.4279 19.6267C24.4132 16.7914 25.5557 14.0125 26.7268 11.2477C28.0263 8.1867 29.2973 5.12569 30.5826 2.06469C30.7825 1.57098 31.0253 1.10548 31.2681 0.625872C31.3538 0.442494 31.4823 0.273222 31.6251 0.132161C31.8679 -0.107641 32.1821 -0.00889879 32.2106 0.329646C32.2392 0.611766 32.2392 0.893887 32.1821 1.17601C31.9679 2.37502 31.7536 3.57403 31.4966 4.75894C30.8111 7.98921 30.1113 11.2195 29.5687 14.478C29.2545 16.3964 28.9831 18.3148 28.7118 20.2332C28.469 21.926 28.2691 23.6046 28.0549 25.2973C28.0263 25.5512 28.012 25.8051 27.9835 26.1296C28.1263 26.0449 28.1977 26.0026 28.2691 25.9462C28.5547 25.6923 28.8546 25.4384 29.1117 25.1562C31.8822 22.3068 35.0097 19.8665 38.3086 17.6377C38.5085 17.5108 38.7085 17.3838 38.9227 17.271C39.0369 17.2146 39.1655 17.1863 39.2797 17.1722C39.5082 17.1581 39.6796 17.3133 39.6796 17.539C39.6796 17.7083 39.651 17.9057 39.5653 18.0609C39.3654 18.47 39.1655 18.8791 38.9084 19.2458C38.0515 20.4307 37.1947 21.6156 36.3093 22.7723C34.9811 24.5074 33.6245 26.2283 32.282 27.9633C32.025 28.2878 31.7965 28.6404 31.5823 29.0072C31.2681 29.5291 31.3252 29.783 31.8536 30.1075C32.2535 30.3473 32.6676 30.5588 33.0961 30.7422C34.6384 31.3911 36.2379 31.8989 37.8373 32.3785C41.9074 33.6199 45.9346 34.9881 49.8762 36.5821C50.1189 36.6809 50.376 36.7655 50.6188 36.8642C50.7187 36.9066 50.8044 36.9489 50.8901 37.0194C51.0757 37.1887 51.0186 37.4849 50.7759 37.5695C50.6902 37.5978 50.5902 37.6119 50.5045 37.6119C49.5477 37.626 48.5909 37.6542 47.634 37.626C45.2063 37.5272 42.7785 37.2733 40.3651 36.9771C36.8234 36.5539 33.3103 35.9756 29.8257 35.2562C29.3545 35.1574 28.8832 35.0869 28.4119 35.0022C28.3119 34.9881 28.212 34.974 28.0977 34.9881C27.7264 34.9881 27.5693 35.0728 27.4694 35.4395C27.3408 35.9332 27.2266 36.427 27.1409 36.9207C26.7553 39.0507 26.4411 41.1948 26.1984 43.353C26.0413 44.7495 25.927 46.1601 25.7557 47.5566C25.6271 48.6569 25.4415 49.743 25.2844 50.8433C25.2415 51.0831 25.1559 51.3229 25.0702 51.5486C24.9845 51.7884 24.8274 52 24.5275 52C24.2562 51.9859 24.0991 51.7884 24.0277 51.5486C23.8991 51.1677 23.7706 50.7728 23.7135 50.3778C23.5707 49.4327 23.4279 48.4735 23.3707 47.5284C23.2279 45.215 23.1137 42.9157 23.0423 40.6023C22.9994 39.2058 23.0423 37.8093 23.0566 36.4128C23.0566 36.2859 23.0566 36.1448 23.0566 35.9615C22.8423 35.9897 22.6567 35.9897 22.471 36.0179C20.4146 36.3564 18.401 36.8219 16.3731 37.3015C12.9171 38.0915 9.46111 38.9519 5.96228 39.6431C4.47706 39.9394 2.97757 40.1933 1.47807 40.4613C1.22101 40.5036 0.949674 40.5177 0.692618 40.5459C0.621213 40.5459 0.549808 40.56 0.492684 40.5459C0.192785 40.5318 0.0356946 40.4472 0.00713275 40.2638C-0.03571 40.024 0.12138 39.9111 0.292751 39.8124C0.678337 39.6008 1.04964 39.4033 1.43523 39.2058C5.07686 37.3015 8.80419 35.5665 12.5029 33.7891C14.2309 32.9569 15.9304 32.04 17.6298 31.1513C17.844 31.0385 18.0297 30.9115 18.2867 30.7563C18.1582 30.5871 18.0582 30.4178 17.9297 30.2908C17.2157 29.5291 16.5302 28.7392 15.759 28.0339C14.2167 26.6233 12.6458 25.255 11.0606 23.8867C9.13265 22.2222 7.23329 20.5295 5.49101 18.6816C5.10543 18.2725 4.73412 17.8352 4.3771 17.3979C4.27713 17.2851 4.19145 17.144 4.10576 17.003C3.99151 16.8055 4.00579 16.6221 4.13432 16.4951C4.24857 16.3682 4.43422 16.3541 4.63416 16.4528C4.70556 16.481 4.77696 16.5375 4.84837 16.5657C5.80519 17.1017 6.73345 17.6659 7.70456 18.1738C10.5893 19.669 13.4883 21.1642 16.316 22.7864C17.6726 23.5623 19.0865 24.2111 20.5717 24.7331C20.8002 24.8177 21.0001 24.9305 21.2143 25.0434C21.4 25.128 21.5713 25.2268 21.7856 25.3396Z" fill="#ff9800"></path>
+                </svg>
+              </div>
+
+              <h1 class="name md:flex items-center flex-wrap justify-center font-secondary" data-aos="fade-up-sm">
+                <!-- first name -->
+                <span class="inline-block">Foyez</span>
+                
+                <!-- image/desktop -->
+                <div class="relative my-4 md:my-0 hidden md:block">
+                  <div class="bg-[#E3DFDC] mx-5 rounded-full overflow-hidden">
+                    <img 
+                      data-aos="slide-up" 
+                      data-aos-duration="500" 
+                      data-aos-delay="150" 
+                      loading="lazy" 
+                      width="150" 
+                      height="150"
+                      class="mx-auto"
+                      alt="CharlieEdward" 
+                      src="./images/author.png" />
+                  </div>
+                  <svg data-aos class="absolute top-[-0px] right-[10px] transition duration-1000 delay-300 scale-0 rotate-[360deg] [&.aos-animate]:scale-100 [&.aos-animate]:rotate-0" width="51" height="52" viewBox="0 0 51 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M21.7856 25.3396C21.8855 25.0011 21.9855 24.6907 22.0712 24.3804C22.4853 22.7864 22.8852 21.1925 23.4279 19.6267C24.4132 16.7914 25.5557 14.0125 26.7268 11.2477C28.0263 8.1867 29.2973 5.12569 30.5826 2.06469C30.7825 1.57098 31.0253 1.10548 31.2681 0.625872C31.3538 0.442494 31.4823 0.273222 31.6251 0.132161C31.8679 -0.107641 32.1821 -0.00889879 32.2106 0.329646C32.2392 0.611766 32.2392 0.893887 32.1821 1.17601C31.9679 2.37502 31.7536 3.57403 31.4966 4.75894C30.8111 7.98921 30.1113 11.2195 29.5687 14.478C29.2545 16.3964 28.9831 18.3148 28.7118 20.2332C28.469 21.926 28.2691 23.6046 28.0549 25.2973C28.0263 25.5512 28.012 25.8051 27.9835 26.1296C28.1263 26.0449 28.1977 26.0026 28.2691 25.9462C28.5547 25.6923 28.8546 25.4384 29.1117 25.1562C31.8822 22.3068 35.0097 19.8665 38.3086 17.6377C38.5085 17.5108 38.7085 17.3838 38.9227 17.271C39.0369 17.2146 39.1655 17.1863 39.2797 17.1722C39.5082 17.1581 39.6796 17.3133 39.6796 17.539C39.6796 17.7083 39.651 17.9057 39.5653 18.0609C39.3654 18.47 39.1655 18.8791 38.9084 19.2458C38.0515 20.4307 37.1947 21.6156 36.3093 22.7723C34.9811 24.5074 33.6245 26.2283 32.282 27.9633C32.025 28.2878 31.7965 28.6404 31.5823 29.0072C31.2681 29.5291 31.3252 29.783 31.8536 30.1075C32.2535 30.3473 32.6676 30.5588 33.0961 30.7422C34.6384 31.3911 36.2379 31.8989 37.8373 32.3785C41.9074 33.6199 45.9346 34.9881 49.8762 36.5821C50.1189 36.6809 50.376 36.7655 50.6188 36.8642C50.7187 36.9066 50.8044 36.9489 50.8901 37.0194C51.0757 37.1887 51.0186 37.4849 50.7759 37.5695C50.6902 37.5978 50.5902 37.6119 50.5045 37.6119C49.5477 37.626 48.5909 37.6542 47.634 37.626C45.2063 37.5272 42.7785 37.2733 40.3651 36.9771C36.8234 36.5539 33.3103 35.9756 29.8257 35.2562C29.3545 35.1574 28.8832 35.0869 28.4119 35.0022C28.3119 34.9881 28.212 34.974 28.0977 34.9881C27.7264 34.9881 27.5693 35.0728 27.4694 35.4395C27.3408 35.9332 27.2266 36.427 27.1409 36.9207C26.7553 39.0507 26.4411 41.1948 26.1984 43.353C26.0413 44.7495 25.927 46.1601 25.7557 47.5566C25.6271 48.6569 25.4415 49.743 25.2844 50.8433C25.2415 51.0831 25.1559 51.3229 25.0702 51.5486C24.9845 51.7884 24.8274 52 24.5275 52C24.2562 51.9859 24.0991 51.7884 24.0277 51.5486C23.8991 51.1677 23.7706 50.7728 23.7135 50.3778C23.5707 49.4327 23.4279 48.4735 23.3707 47.5284C23.2279 45.215 23.1137 42.9157 23.0423 40.6023C22.9994 39.2058 23.0423 37.8093 23.0566 36.4128C23.0566 36.2859 23.0566 36.1448 23.0566 35.9615C22.8423 35.9897 22.6567 35.9897 22.471 36.0179C20.4146 36.3564 18.401 36.8219 16.3731 37.3015C12.9171 38.0915 9.46111 38.9519 5.96228 39.6431C4.47706 39.9394 2.97757 40.1933 1.47807 40.4613C1.22101 40.5036 0.949674 40.5177 0.692618 40.5459C0.621213 40.5459 0.549808 40.56 0.492684 40.5459C0.192785 40.5318 0.0356946 40.4472 0.00713275 40.2638C-0.03571 40.024 0.12138 39.9111 0.292751 39.8124C0.678337 39.6008 1.04964 39.4033 1.43523 39.2058C5.07686 37.3015 8.80419 35.5665 12.5029 33.7891C14.2309 32.9569 15.9304 32.04 17.6298 31.1513C17.844 31.0385 18.0297 30.9115 18.2867 30.7563C18.1582 30.5871 18.0582 30.4178 17.9297 30.2908C17.2157 29.5291 16.5302 28.7392 15.759 28.0339C14.2167 26.6233 12.6458 25.255 11.0606 23.8867C9.13265 22.2222 7.23329 20.5295 5.49101 18.6816C5.10543 18.2725 4.73412 17.8352 4.3771 17.3979C4.27713 17.2851 4.19145 17.144 4.10576 17.003C3.99151 16.8055 4.00579 16.6221 4.13432 16.4951C4.24857 16.3682 4.43422 16.3541 4.63416 16.4528C4.70556 16.481 4.77696 16.5375 4.84837 16.5657C5.80519 17.1017 6.73345 17.6659 7.70456 18.1738C10.5893 19.669 13.4883 21.1642 16.316 22.7864C17.6726 23.5623 19.0865 24.2111 20.5717 24.7331C20.8002 24.8177 21.0001 24.9305 21.2143 25.0434C21.4 25.128 21.5713 25.2268 21.7856 25.3396Z" fill="#ff9800"></path>
+                  </svg>
+                </div>
+
+                <!-- last name -->
+                <span class="inline-block">Naeem</span>
+              </h1>
+
+              <!-- introduction -->
+              <div class="mt-5 md:mt-8 md:text-xl font-light md:max-w-xl mx-auto opacity-80" data-aos="fade-up-sm" data-aos-delay="100">
+                Undergraduate Computer Science student passionate about Artificial Intelligence &amp; Robotics, exploring innovative solutions in autonomous systems &amp; machine learning
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ================= end of banner ================= -->
+
+
+
+      <!-- ================= start of blog/posts ================= -->
+      <section class="py-28 bg-white text-dark rounded-b-2xl">
+        <div class="container">
+          <div class="row mb-16 items-end">
+            <div class="sm:col-8 order-2 sm:order-1">
+              <!-- Section Title -->
+              <h2 class="text-black text-4xl lg:text-5xl font-secondary font-medium -mt-[6px] text-center sm:text-left">
+                My weekly thoughts
+              </h2>
+            </div>
+            <div class="sm:col-4 order-1 sm:order-2 block mb-4 sm:mb-0 text-center sm:text-right">
+              <!-- Section Subtitle -->
+              <span class="font-secondary text-2xl leading-none text-black/75">Blog</span>
+            </div>
+          </div>
+          <!-- Blog Posts -->
+          <div class="row md:gx-4 gy-5">
+            <!-- Blog Post 1 -->
+            <div class="lg:col-4 sm:col-6 init-delay" data-aos="fade-up-sm" data-aos-duration="500" style="--lg-delay:0ms;--md-delay:0ms;--sm-delay:0ms">
+              <article class="relative group text-center">
+                <div class="relative overflow-hidden rounded-lg mb-8">
+                  <!-- Blog Post Image -->
+                  <img alt="You have no idea how much better you can feel!" loading="lazy" width="620" height="500" class="duration-700 group-hover:scale-110 group-hover:-rotate-1 object-cover w-full rounded-lg group-hover:brightness-75 bg-light/20" src="./images/blog/01.jpg" />
+                </div>
+                <div class="px-2 sm:px-6 transition-all duration-500 group-hover:opacity-60">
+                  <!-- Blog Post Tags and Date -->
+                  <div class="flex flex-wrap items-center justify-center mb-4 space-x-5">
+                    <span class="inline-block text-sm rounded-full bg-[#efefef] px-3 py-1 capitalize">lifestyle</span>
+                    <span class="opacity-75 text-sm">25 May / 2023</span>
+                  </div>
+                  <!-- Blog Post Title -->
+                  <h3 class="text-xl md:text-2xl leading-tight">
+                    <a class="stretched-link" href="./blog-single.html">You have no idea how much better you can feel!</a>
+                  </h3>
+                </div>
+              </article>
             </div>
 
-            <div class="mil-menu-frame mil-menu-frame-2">
-                <div class="mil-menu-window">
-                    <div class="container">
-                        <div class="row mil-no-g">
-                            <div class="col-lg-6">
-                                <div class="mil-left-side">
-                                    <div class="mil-menu-part mil-inner-scroll" id="swupMenu">
-                                        <ul class="mil-main-menu mil-c-gone">
-                                            <li class="mil-has-children">
-                                                <a href="#.">Template style</a>
-                                                <ul>
-                                                    <li><a href="home-1.html" target="_blank" data-no-swup>Friendly</a></li>
-                                                    <li class="mil-current"><a href="home-4.html" target="_blank" data-no-swup>Stylish</a></li>
-                                                </ul>
-                                            </li>
-                                            <li class="mil-has-children">
-                                                <a href="#.">Home type</a>
-                                                <ul>
-                                                    <li><a href="home-4.html">Corporate</a></li>
-                                                    <li><a href="home-5.html">Agency</a></li>
-                                                    <li class="mil-current"><a href="home-6.html">Personal</a></li>
-                                                </ul>
-                                            </li>
-                                            <li class="mil-has-children">
-                                                <a href="#.">Portfolio</a>
-                                                <ul>
-                                                    <li><a href="portfolio-1-stl.html">Grid type 1</a></li>
-                                                    <li><a href="portfolio-2-stl.html">Grid type 2</a></li>
-                                                    <li><a href="portfolio-3-stl.html">Grid type 3</a></li>
-                                                </ul>
-                                            </li>
-                                            <li class="mil-has-children">
-                                                <a href="#.">Pages</a>
-                                                <ul>
-                                                    <li><a href="team-stl.html">Team</a></li>
-                                                    <li><a href="contact-stl.html">Contact</a></li>
-                                                    <li><a href="services-stl.html">Services</a></li>
-                                                    <li><a href="service-stl.html">Service single</a></li>
-                                                    <li><a href="blog-stl.html">Blog</a></li>
-                                                    <li><a href="publication-stl.html">Publication</a></li>
-                                                    <li><a href="404-stl.html">404</a></li>
-                                                </ul>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <div class="mil-bottom-part">
-                                        <p class="mil-text-sm">©2024. All rights reserved.</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-6">
-                                <div class="mil-right-side">
-                                    <div class="mil-links-part">
-                                        <ul class="mil-links">
-                                            <li><a href="#.">Privacy policy</a></li>
-                                            <li><a href="#.">Therms and conditions</a></li>
-                                            <li><a href="#.">Site map</a></li>
-                                            <li><a href="#.">Careers</a></li>
-                                        </ul>
-                                    </div>
-                                    <div class="mil-blog-part">
-                                        <div class="mil-blog-section">
-                                            <div class="mil-jcb mil-aic">
-                                                <h4 class="mil-head4 mil-mb30">Latest from blog</h4>
-                                                <div class="mil-sb-nav mil-mb30">
-                                                    <div class="mil-slider-btn mil-sb-prev mil-c-gone"><i class="fal fa-arrow-left"></i></div>
-                                                    <div class="mil-slider-btn mil-sb-next mil-c-gone"><i class="fal fa-arrow-right"></i></div>
-                                                </div>
-                                            </div>
-                                            <div class="swiper-container mil-blog-slider-sm">
-                                                <div class="swiper-wrapper">
-                                                    <div class="swiper-slide">
-                                                        <a href="publication-stl.html" class="mil-blog-card-sm mil-c-gone">
-                                                            <div class="mil-cover">
-                                                                <div class="mil-hover-frame">
-                                                                    <img src="img/blog/9.jpg" alt="cover">
-                                                                </div>
-                                                            </div>
-                                                            <div class="mil-text-frame">
-                                                                <h4 class="mil-head6 mil-max-1row-text">How to Become a Graphic Designer in 10 Simple Steps</h4>
-                                                            </div>
-                                                        </a>
-                                                    </div>
-                                                    <div class="swiper-slide">
-                                                        <a href="publication-stl.html" class="mil-blog-card-sm mil-c-gone">
-                                                            <div class="mil-cover">
-                                                                <div class="mil-hover-frame">
-                                                                    <img src="img/blog/10.jpg" alt="cover">
-                                                                </div>
-                                                            </div>
-                                                            <div class="mil-text-frame">
-                                                                <h4 class="mil-head6 mil-max-1row-text">10 Essential Tools Every Graphic Designer Should Master</h4>
-                                                            </div>
-                                                        </a>
-                                                    </div>
-                                                    <div class="swiper-slide">
-                                                        <a href="publication-stl.html" class="mil-blog-card-sm mil-c-gone">
-                                                            <div class="mil-cover">
-                                                                <div class="mil-hover-frame">
-                                                                    <img src="img/blog/11.jpg" alt="cover">
-                                                                </div>
-                                                            </div>
-                                                            <div class="mil-text-frame">
-                                                                <h4 class="mil-head6 mil-max-1row-text">The Ultimate Guide to UI/UX Design for Beginners</h4>
-                                                            </div>
-                                                        </a>
-                                                    </div>
-                                                    <div class="swiper-slide">
-                                                        <a href="publication-stl.html" class="mil-blog-card-sm mil-c-gone">
-                                                            <div class="mil-cover">
-                                                                <div class="mil-hover-frame">
-                                                                    <img src="img/blog/12.jpg" alt="cover">
-                                                                </div>
-                                                            </div>
-                                                            <div class="mil-text-frame">
-                                                                <h4 class="mil-head6 mil-max-1row-text">How to Create Stunning Visuals with Minimal Effort</h4>
-                                                            </div>
-                                                        </a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="mil-menu-social">
-                                            <ul class="mil-social mil-c-gone">
-                                                <li><a href="#." target="_blank" data-no-swup><i class="far fa-circle"></i></a></li>
-                                                <li><a href="#." target="_blank" data-no-swup><i class="far fa-circle"></i></a></li>
-                                                <li><a href="#." target="_blank" data-no-swup><i class="far fa-circle"></i></a></li>
-                                                <li><a href="#." target="_blank" data-no-swup><i class="far fa-circle"></i></a></li>
-                                                <li><a href="#." target="_blank" data-no-swup><i class="far fa-circle"></i></a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+            <!-- Blog Post 2 -->
+            <div class="lg:col-4 sm:col-6 init-delay" data-aos="fade-up-sm" data-aos-duration="500" style="--lg-delay:75ms;--md-delay:75ms;--sm-delay:75ms">
+              <article class="relative group text-center">
+                <div class="relative overflow-hidden rounded-lg mb-8">
+                  <!-- Blog Post Image -->
+                  <img alt="The Role of a Developer in Creating Communities" loading="lazy" width="620" height="500" class="duration-700 group-hover:scale-110 group-hover:-rotate-1 object-cover w-full rounded-lg group-hover:brightness-75 bg-light/20" src="./images/blog/09.jpg" />
                 </div>
-            </div>
-        </div>
-        <!-- fixed elements end -->
-
-        <!-- page transition -->
-        <div class="mil-transition-fade" id="swup">
-            <div class="mil-transition-frame">
-
-                <!-- content -->
-                <div id="smooth-content" class="mil-content">
-
-                    <!-- hero -->
-                    <div class="mil-hero-6 mil-up" id="top">
-                        <div class="mil-overlay"></div>
-                        <div class="container mil-hero-main mil-relative">
-                            <div class="row mil-jcb">
-                                <div class="col-lg-6">
-                                    <div class="mil-hero-text">
-                                        <div class="mil-text-pad"></div>
-                                        <div>
-                                            <i class="far fa-hand-peace mil-mb30"></i>
-                                            <p class="mil-stylized mil-m2 mil-mb60">Welcome!</p>
-                                            <h1 class="mil-display3 mil-rubber mil-mb60">My NAme Is <br><span class="mil-a1">Foyez</span> Ahammed Naeem, <br>a CS undergraduate</h1>
-                                            <a href="files/cv.txt" download="cv" class="mil-btn mil-btn-border mil-c-gone">Download cv</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-6">
-                                    <div class="mil-hero-portrait-frame">
-                                        <div class="mil-hero-portrait">
-                                            <img src="img/foyez.jpg" alt="portrait" class="mil-scale-img" data-value-1=".7" data-value-2="1.2">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- hero end -->
-
-                    <!-- about -->
-                    <!-- <div class="mil-p-160-100" id="about">
-                        <div class="container">
-                            <div class="row mil-jcb">
-                                <div class="col-lg-4">
-                                    <h2 class="mil-head1 mil-mb60 mil-up">Story <br>About <span class="mil-a2">Me</span></h2>
-                                </div>
-                                <div class="col-lg-6">
-                                    <p class="mil-text-md mil-mb60 mil-up">Our goal is to help you build an emotional connection with your audience using cutting-edge tools and approaches. We combine our expertise with your unique insights, creating compelling narratives that not only engage but also inspire. Trust us with your idea, and we'll transform it into a successful project that will impress both you and your clients, driving growth and lasting impact.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div> -->
-                    <!-- about end -->
-
-                    <!-- counters -->
-                    <!-- <div class="mil-p-0-130">
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-lg-4">
-                                    <div class="mil-counter-item mil-stl mil-mb30 mil-768-mb60 mil-up">
-                                        <h4 class="mil-up">14<span class="mil-a2">+</span></h4>
-                                        <div class="mil-counter-text">
-                                            <h5 class="mil-head4 mil-m1 mil-up">Years experience</h5>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-4">
-                                    <div class="mil-counter-item mil-stl mil-mb30 mil-768-mb60 mil-up">
-                                        <h4 class="mil-up">45<span class="mil-a2">+</span></h4>
-                                        <div class="mil-counter-text">
-                                            <h5 class="mil-head4 mil-m1 mil-up">Unique customers</h5>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-4">
-                                    <div class="mil-counter-item mil-stl mil-mb30 mil-up">
-                                        <h4 class="mil-up">57<span class="mil-a2">+</span></h4>
-                                        <div class="mil-counter-text">
-                                            <h5 class="mil-head4 mil-m1 mil-up">Completed projects</h5>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div> -->
-                    <!-- counters end -->
-
-                    <!-- portfolio -->
-                    <!-- <div id="portfolio">
-                        <div class="container">
-                            <div class="row mil-aie mil-mb30">
-                                <div class="col-md-7">
-                                    <h2 class="mil-head1 mil-mb60 mil-up">Designing a <span class="mil-a2">Better</span> World Today</h2>
-                                </div>
-                                <div class="col-md-5">
-                                    <p class="mil-stylized mil-m1 mil-tar mil-768-tal mil-mb60 mil-up"><a href="portfolio-1-stl.html" class="mil-arrow-link mil-c-gone">View all</a></p>
-                                </div>
-                            </div>
-                            <div class="row mil-mb60">
-                                <div class="col-md-6">
-                                    <div class="mil-work-card mil-stl mil-mb30">
-                                        <div class="mil-cover mil-port mil-up">
-                                            <div class="mil-hover-frame">
-                                                <img src="img/works/1/1-s.jpg" alt="cover" class="mil-scale-img" data-value-1="1.15" data-value-2="1">
-                                            </div>
-                                        </div>
-                                        <div class="mil-hover-overlay">
-                                            <a href="project-1-stl.html" class="mil-descr">
-                                                <div class="mil-text-frame">
-                                                    <h4 class="mil-head4 mil-max-1row-text mil-m1 mil-c-gone">Cyberfeature</h4>
-                                                </div>
-                                                <div class="mil-768-gone mil-c-gone">
-                                                    <div class="mil-stylized-btn mil-a1">
-                                                        <i class="fal fa-arrow-up"></i>
-                                                        <span>Read more</span>
-                                                    </div>
-                                                </div>
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <div class="mil-work-card mil-stl mil-mb30">
-                                        <div class="mil-cover mil-square mil-up">
-                                            <div class="mil-hover-frame">
-                                                <img src="img/works/2/1-s.jpg" alt="cover" class="mil-scale-img" data-value-1="1.15" data-value-2="1">
-                                            </div>
-                                        </div>
-                                        <div class="mil-hover-overlay">
-                                            <a href="project-2-stl.html" class="mil-descr">
-                                                <div class="mil-text-frame">
-                                                    <h4 class="mil-head4 mil-max-1row-text mil-m1 mil-c-gone">Projection</h4>
-                                                </div>
-                                                <div class="mil-768-gone mil-c-gone">
-                                                    <div class="mil-stylized-btn mil-a1">
-                                                        <i class="fal fa-arrow-up"></i>
-                                                        <span>Read more</span>
-                                                    </div>
-                                                </div>
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <div class="mil-work-card mil-stl mil-mb30">
-                                        <div class="mil-cover mil-land mil-up">
-                                            <div class="mil-hover-frame">
-                                                <img src="img/works/3/1-s.jpg" alt="cover" class="mil-scale-img" data-value-1="1.15" data-value-2="1">
-                                            </div>
-                                        </div>
-                                        <div class="mil-hover-overlay">
-                                            <a href="project-3-stl.html" class="mil-descr">
-                                                <div class="mil-text-frame">
-                                                    <h4 class="mil-head4 mil-max-1row-text mil-m1 mil-c-gone">Ultrahole</h4>
-                                                </div>
-                                                <div class="mil-768-gone mil-c-gone">
-                                                    <div class="mil-stylized-btn mil-a1">
-                                                        <i class="fal fa-arrow-up"></i>
-                                                        <span>Read more</span>
-                                                    </div>
-                                                </div>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="mil-work-card mil-stl mil-mb30">
-                                        <div class="mil-cover mil-land mil-up">
-                                            <div class="mil-hover-frame">
-                                                <img src="img/works/4/1-s.jpg" alt="cover" class="mil-scale-img" data-value-1="1.15" data-value-2="1">
-                                            </div>
-                                        </div>
-                                        <div class="mil-hover-overlay">
-                                            <a href="project-4-stl.html" class="mil-descr">
-                                                <div class="mil-text-frame">
-                                                    <h4 class="mil-head4 mil-max-1row-text mil-m1 mil-c-gone">The alien car</h4>
-                                                </div>
-                                                <div class="mil-768-gone mil-c-gone">
-                                                    <div class="mil-stylized-btn mil-a1">
-                                                        <i class="fal fa-arrow-up"></i>
-                                                        <span>Read more</span>
-                                                    </div>
-                                                </div>
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <div class="mil-work-card mil-stl mil-mb30">
-                                        <div class="mil-cover mil-port mil-up">
-                                            <div class="mil-hover-frame">
-                                                <img src="img/works/5/1-s.jpg" alt="cover" class="mil-scale-img" data-value-1="1.15" data-value-2="1">
-                                            </div>
-                                        </div>
-                                        <div class="mil-hover-overlay">
-                                            <a href="project-5-stl.html" class="mil-descr">
-                                                <div class="mil-text-frame">
-                                                    <h4 class="mil-head4 mil-max-1row-text mil-m1 mil-c-gone">Exit into the sunset</h4>
-                                                </div>
-                                                <div class="mil-768-gone mil-c-gone">
-                                                    <div class="mil-stylized-btn mil-a1">
-                                                        <i class="fal fa-arrow-up"></i>
-                                                        <span>Read more</span>
-                                                    </div>
-                                                </div>
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <div class="mil-work-card mil-stl mil-mb30">
-                                        <div class="mil-cover mil-square mil-up">
-                                            <div class="mil-hover-frame">
-                                                <img src="img/works/6/1-s.jpg" alt="cover" class="mil-scale-img" data-value-1="1.15" data-value-2="1">
-                                            </div>
-                                        </div>
-                                        <div class="mil-hover-overlay">
-                                            <a href="project-6-stl.html" class="mil-descr">
-                                                <div class="mil-text-frame">
-                                                    <h4 class="mil-head4 mil-max-1row-text mil-m1 mil-c-gone">Neutral point of gravity</h4>
-                                                </div>
-                                                <div class="mil-768-gone mil-c-gone">
-                                                    <div class="mil-stylized-btn mil-a1">
-                                                        <i class="fal fa-arrow-up"></i>
-                                                        <span>Read more</span>
-                                                    </div>
-                                                </div>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row mil-aic mil-p-0-130">
-                                <div class="col-md-6 mil-mb30">
-                                    <p class="mil-text-md mil-deco-text mil-up">We've been working for several years to build a portfolio <br>that truly reflects our diversity.</p>
-                                </div>
-                                <div class="col-md-6 mil-jce mil-768-jcs mil-mb30">
-                                    <span class="mil-up"><a href="portfolio-1-stl.html" class="mil-btn mil-a2 mil-c-gone">View all projects</a></span>
-                                </div>
-                            </div>
-                        </div>
-                    </div> -->
-                    <!-- portfolio end -->
-                    <!-- call to action -->
-                    <!-- <div class="container" id="contact">
-                        <div class="mil-half-container mil-stl mil-up">
-                            <div class="mil-text-box mil-g-m4 mil-p-160-160">
-                                <p class="mil-stylized mil-m2 mil-mb60 mil-up">Contact</p>
-                                <h2 class="mil-display3 mil-mb60 mil-m1 mil-up">Let’s <span class="mil-a1">make </span> <br>an <span class="mil-a1">impact </span><br>together.</h2>
-                                <p class="mil-text-md mil-deco-text mil-shortened mil-up">Welcome to <span class="mil-a2">PIXY</span> where your ideas come to life. We specialize in crafting unique brands, captivating advertising campaigns, and effective digital strategies.</p>
-                            </div>
-                            <div class="mil-image-box">
-                                <div class="mil-image-frame">
-                                    <img src="img/home-6/2.jpg" alt="img" class="mil-scale-img" data-value-1="1.20" data-value-2="1">
-                                    <div class="mil-overlay"></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row mil-aic mil-jcb mil-no-g">
-                            <div class="col-lg-4 mil-992-gone">
-                                <p class="mil-text-sm mil-up">We accept your requests 24/7. Feel free to <a href="contact-stl.html" class="mil-text-link mil-a2 mil-c-gone">write to us</a> whenever it is convenient for you</p>
-                            </div>
-                            <div class="col-lg-6">
-                                <div class="mil-button-pad mil-a2">
-                                    <span class="mil-up"><a href="contact-stl.html" class="mil-btn mil-btn-border mil-m1 mil-c-gone">Get in touch</a></span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row mil-aic mil-jcb mil-no-g mil-992-gone">
-                            <div class="col-lg-6">
-                                <div class="mil-button-pad mil-a1 mil-jst" style="display: block"></div>
-                            </div>
-                            <div class="col-lg-6 mil-992-gone"></div>
-                        </div>
-                    </div> -->
-                    <!-- call to action end -->
-
-                    <!-- footer -->
-                    <footer class="mil-footer mil-p-160-160">
-                        <div class="container">
-                            <div class="row mil-no-g">
-                                <div class="col-lg-6 mil-up">
-                                    <a href="contact.html" class="mil-footer-contact mil-mb90">
-                                        <h6 class="mil-footer-link mil-rubber mil-m1">Let’s TALK</h6>
-                                        <span class="mil-stylized-btn mil-c-gone">
-                                            <i class="fal fa-arrow-up"></i>
-                                            <span>Read more</span>
-                                        </span>
-                                    </a>
-                                </div>
-                                <!-- <div class="col-lg-12">
-                                    <div class="mil-footer-menu-frame mil-mb90 mil-up">
-                                        <ul class="mil-footer-menu">
-                                            <li><a href="#." class="mil-c-gone">Home</a></li>
-                                            <li><a href="#." class="mil-c-gone">Services</a></li>
-                                            <li><a href="#." class="mil-c-gone">About</a></li>
-                                            <li><a href="#." class="mil-c-gone">Portfolio</a></li>
-                                            <li><a href="#." class="mil-c-gone">Contact</a></li>
-                                        </ul>
-                                        <ul class="mil-social mil-c-gone">
-                                            <li><a href="#." target="_blank" data-no-swup><i class="far fa-circle"></i></a></li>
-                                            <li><a href="#." target="_blank" data-no-swup><i class="far fa-circle"></i></a></li>
-                                            <li><a href="#." target="_blank" data-no-swup><i class="far fa-circle"></i></a></li>
-                                            <li><a href="#." target="_blank" data-no-swup><i class="far fa-circle"></i></a></li>
-                                            <li><a href="#." target="_blank" data-no-swup><i class="far fa-circle"></i></a></li>
-                                        </ul>
-                                    </div>
-                                </div> -->
-                                <div class="col-lg-12">
-                                    <div class="mil-footer-bottom mil-up">
-                                        <p class="mil-text-sm">©2024. All rights reserved.</p>
-                                        <p class="mil-text-sm">Design by: <a href="https://themeforest.net/user/millerdigitaldesign/portfolio" class="mil-text-link mil-a2 mil-c-gone">Nazar Miller</a></p>
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
-                    </footer>
-                    <!-- footer end -->
-
+                <div class="px-2 sm:px-6 transition-all duration-500 group-hover:opacity-60">
+                  <!-- Blog Post Tags and Date -->
+                  <div class="flex flex-wrap items-center justify-center mb-4 space-x-5">
+                    <span class="inline-block text-sm rounded-full bg-[#efefef] px-3 py-1 capitalize">post elements</span>
+                    <span class="opacity-75 text-sm">23 May / 2023</span>
+                  </div>
+                  <!-- Blog Post Title -->
+                  <h3 class="text-xl md:text-2xl leading-tight">
+                    <a class="stretched-link" href="./blog-single.html">The Role of a Developer in Creating Communities</a>
+                  </h3>
                 </div>
-                <!-- content -->
-
+              </article>
             </div>
+
+            <!-- Blog Post 3 -->
+            <div class="lg:col-4 sm:col-6 init-delay" data-aos="fade-up-sm" data-aos-duration="500" style="--lg-delay:150ms;--md-delay:0ms;--sm-delay:0ms">
+              <article class="relative group text-center">
+                <div class="relative overflow-hidden rounded-lg mb-8">
+                  <!-- Blog Post Image -->
+                  <img alt="Ways to improve usability and accessibility" loading="lazy" width="620" height="500" class="duration-700 group-hover:scale-110 group-hover:-rotate-1 object-cover w-full rounded-lg group-hover:brightness-75 bg-light/20" src="./images/blog/12.jpg" />
+                </div>
+                <div class="px-2 sm:px-6 transition-all duration-500 group-hover:opacity-60">
+                  <!-- Blog Post Tags and Date -->
+                  <div class="flex flex-wrap items-center justify-center mb-4 space-x-5">
+                    <span class="inline-block text-sm rounded-full bg-[#efefef] px-3 py-1 capitalize">tech</span>
+                    <span class="opacity-75 text-sm">13 May / 2023</span>
+                  </div>
+                  <!-- Blog Post Title -->
+                  <h3 class="text-xl md:text-2xl leading-tight">
+                    <a class="stretched-link" href="./blog-single.html">Ways to improve usability and accessibility</a>
+                  </h3>
+                </div>
+              </article>
+            </div>
+          </div>
+          <!-- All Posts Button -->
+          <div class="text-center mt-16">
+            <a class="button button-dark" href="blog.html">
+              <span>All Posts</span>
+            </a>
+          </div>
         </div>
-        <!-- page transition -->
+      </section>
+      <!-- ================= end of blog/posts ================= -->
 
-    </div>
-    <!-- wrapper end -->
+    </main>
+    <!-- end of main -->
 
-    <!-- swup js -->
-    <script src="js/plugins/swup.min.js"></script>
-    <!-- gsap js -->
-    <script src="js/plugins/gsap.min.js"></script>
-    <!-- scroll smoother -->
-    <script src="js/plugins/ScrollSmoother.min.js"></script>
-    <!-- scroll trigger js -->
-    <script src="js/plugins/ScrollTrigger.min.js"></script>
-    <!-- scroll to js -->
-    <script src="js/plugins/ScrollTo.min.js"></script>
-    <!-- swiper js -->
-    <script src="js/plugins/swiper.min.js"></script>
-    <!-- parallax js -->
-    <script src="js/plugins/parallax.js"></script>
-
-    <!-- pixy js -->
-    <script src="js/main.js"></script>
-
-</body>
-
+    <!-- ================= start of footer ================= -->
+    <footer class="pt-28 pb-20 sticky bottom-0 z-[1]">
+      <div class="container">
+        <div class="row">
+          <div class="md:col-6 text-center md:text-left mb-4">
+            <!-- Social Links -->
+            <ul class="inline-flex flex-wrap justify-center md:justify-start gap-x-6">
+              <li class="inline-block hover:opacity-75 transition-op duration-300">
+                <a href="www.linkedin.com/in/foyeznaeem" class="link">Linkedin</a>
+              </li>
+              <li class="inline-block hover:opacity-75 transition-op duration-300">
+                <a href="https://github.com/foyeznaeem" class="link">Github</a>
+              </li>
+            </ul>
+          </div>
+          <div class="md:col-6 text-center md:text-right mb-4">
+            <!-- Footer Menu -->
+            <ul class="inline-flex flex-wrap justify-center md:justify-end gap-x-6">
+              <li class="inline-block hover:opacity-75 transition-op duration-300">
+                <a href="./privacy.html" class="link">Privacy policy</a>
+              </li>
+            </ul>
+          </div>
+          <!-- Copyright -->
+          <div class="md:col-6 text-center md:text-left mb-4 md:mb-0">
+            <p class="text-white/75">© 2025 All rights reserved.</p>
+          </div>
+          <!-- Developer Info -->
+          <div class="md:col-6 text-center md:text-right">
+            <p class="text-white/75">Developed by <a class="link text-white" href="https://themeforest.net/user/platol/portfolio" target="_blank" rel="noopener noreferrer">Platol</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- ================= end of footer ================= -->
+    <!-- start of script -->
+    <script src="./plugins/aos/aos.js"></script>
+    <script src="./scripts/main.js"></script>
+  </body>
 </html>
